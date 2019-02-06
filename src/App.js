@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import Header from './PrivateComponents/Header/index'
-function data(props){
-  if(props.children.props.path === '/'){
-    return props.children
-  }
-  if(props.children.props.path !== '/'){
-    console.log("ASDASD")
-  }
-}
+
 export default (props) => {
   return (
     <div className="wrapper">
