@@ -11,6 +11,7 @@ ReactDOM.render(
     <Router>
         <App>
             <Route path ="/" exact component={Login} />
+            <PrivateRoute path="/dashboard" exact component={Dashboard} authStatus={true} redirectURL="/" />
         </App>
     </Router>
     , document.querySelector('#root'));
